@@ -1,0 +1,22 @@
+html {
+    background-color: cadetblue;
+}
+
+header {
+    background-color: rgb(241, 241, 202);
+}
+
+footer {
+    background-color: rgb(241, 241, 202);
+}
+
+header,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.img {
+    width: 100%;
+}
