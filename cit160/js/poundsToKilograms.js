@@ -11,5 +11,5 @@ function convKg() {
 
     //OUTPUT: Display the number of kilograms
 
-    document.getElementById("output").innerHTML = pounds + " <strong> pounds </strong> equal to " + kilos.toFixed(1) + "<strong> kilos</strong>.";
+    document.getElementById("output").innerHTML = pounds + " <strong> pounds </strong> equal to " + kilos.toFixed(1) + "<strong> kilos👩🏻‍💻</strong>.";
 }
