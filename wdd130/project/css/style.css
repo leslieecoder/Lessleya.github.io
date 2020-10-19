@@ -1,22 +1,75 @@
-html {
-    background-color: cadetblue;
-}
-
-header {
-    background-color: rgb(241, 241, 202);
-}
-
-footer {
-    background-color: rgb(241, 241, 202);
-}
-
-header,
-main,
-footer {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-.img {
-    width: 100%;
-}
+        html {
+            background-color: #4ECDC4;
+        }
+        
+        header {
+            background-color: #f7f2c4;
+            display: flex;
+            padding: 5px 0;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        body {
+            background-color: white;
+            font-size: 16;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .logo {
+            display: flex;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: rgb(241, 241, 202);
+        }
+        
+        header,
+        main,
+        footer,
+        body {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        
+        .img {
+            width: 100%;
+        }
+        
+        .navigation ul {
+            padding: 5;
+            display: flex;
+            list-style: none;
+            justify-content: left;
+        }
+        
+        nav li {
+            padding-left: 100px;
+            display: inline-block;
+            padding: 15px;
+            margin: 4px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            color: #FF6B6B;
+        }
+        
+        a:hover {
+            background-color: pink;
+            padding: 1ch;
+            color: white;
+        }
+        
+        footer {
+            background-color: #f7f2c4;
+            display: flex;
+            padding: 5px 0;
+            margin: auto;
+            align-items: center;
+            justify-content: ;
+            font-family: 'Montserrat', sans-serif;
+        }
