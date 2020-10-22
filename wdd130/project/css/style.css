@@ -63,13 +63,3 @@
             padding: 1ch;
             color: white;
         }
-        
-        footer {
-            background-color: #f7f2c4;
-            display: flex;
-            padding: 5px 0;
-            margin: auto;
-            align-items: center;
-            justify-content: ;
-            font-family: 'Montserrat', sans-serif;
-        }
