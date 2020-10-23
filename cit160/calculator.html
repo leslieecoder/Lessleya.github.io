@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👩🏻‍💻CIT:160 Program W6 Calculator</title>
+    <link rel="stylesheet" href="css/stylecalculator.css">
+    <!--External CSS reference-->
+</head>
+
+<body>
+    <header>
+        <h1>👩🏻‍💻Kids Calculator👩🏻‍💻</h1>
+        <h3>Basic arithmetic</h3>
+    </header>
+    <main>
+        <h2>Are you ready?💁🏻‍♂️</h2>
+        <h4>Let's try your arithmetic abilities!</h4>
+        <h5>Introduce two numbers, one operator and the correct answer</h5>
+
+        <label><input type="text" id="number1" size="2"></label>
+        <select name="select" id="operator" size="1">
+                <option value=""></option>
+    <option value="+">➕</option>
+    <option value="-">➖</option>
+    <option value="*">✖️</option>
+    <option value="/">➗</option>
+    </select>
+
+
+        <input type="text" id="number2" size="2"></label>
+        <label>=</label>
+        <input type="text" id="answer" size="2"></label>
+
+        <label><button onclick="myCalculator()">Verify</button></label>
+        <hr>
+        <p id="output"></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Lesliee Cruz &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>
