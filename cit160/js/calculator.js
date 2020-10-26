@@ -11,37 +11,35 @@ function myCalculator() {
     operator = parseFloat(operator);
     answer = parseFloat(answer);
     //assign the message acording the process and answer
-    let total;
-    let message;
 
-    if (operator == "+") {
-        total = number1 + number2
-        if (total == answer) {
-            message = "Correct! 🏆"
-        } else {
-            message = "Incorrect 😢"
-        }
-    } else if (operator == "-") {
-        total = number1 - number2
-        if (total == answer) {
-            message = "Correct! 🏆"
-        } else {
-            message = "Incorrect 😢"
-        }
-    } else if (operator == "*") {
-        total = number1 * number2
-        if (total == answer) {
-            message = "Correct! 🏆"
-        } else {
-            message = "Incorrect 😢"
-        }
-    } else if (operation == "/") {
-        total = number1 / number2
-        if (total == answer) {
-            message = "Correct! 🏆"
-        } else {
-            message = "Incorrect 😢"
-        }
+    let correct = false;
+    let output = 'Incorrect 😢';
+    switch (operator) {
+        case '+':
+            if ((number1 + number2) == answer) {
+                correct = true;
+            }
+            break;
+        case '-':
+            if ((number1 - number2) == answer) {
+                correct = true;
+            }
+            break;
+        case '*':
+            if ((number1 * number2) == answer) {
+                correct = true;
+            }
+            break;
+        case '/':
+            if ((number1 / number2) == answer) {
+                correct = true;
+            }
+            break;
+        default:
+            break;
     }
-    document.getElementById("output").innerHTML = message
+    if (correct) {
+        output = 'Correct🏆';
+    }
+    document.getElementById('output').innerHTML = output;
 }
