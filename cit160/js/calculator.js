@@ -8,38 +8,39 @@ function myCalculator() {
     //PROCESSING: convert the string to numbers using parseFloat
     number1 = parseFloat(number1);
     number2 = parseFloat(number2);
-    operator = parseFloat(operator);
     answer = parseFloat(answer);
     //assign the message acording the process and answer
 
-    let correct = false;
-    let output = 'Incorrect 😢';
-    switch (operator) {
-        case '+':
-            if ((number1 + number2) == answer) {
-                correct = true;
-            }
-            break;
-        case '-':
-            if ((number1 - number2) == answer) {
-                correct = true;
-            }
-            break;
-        case '*':
-            if ((number1 * number2) == answer) {
-                correct = true;
-            }
-            break;
-        case '/':
-            if ((number1 / number2) == answer) {
-                correct = true;
-            }
-            break;
-        default:
-            break;
+    let correct;
+
+    if (operator == '+') {
+
+        correct = number1 + number2;
+
+    } else if (operator == '-') {
+
+        correct = number1 - number2;
+
+    } else if (operator == "*") {
+
+        correct = number1 * number2;
+
+    } else {
+
+        correct = number1 / number2;
+
     }
-    if (correct) {
-        output = 'Correct🏆';
+
+    // Compare answer that was given to the correct answer 
+
+    if (answer == correct) {
+
+        document.getElementById('output').innerHTML = "Correct🏆";
+
+    } else {
+
+        document.getElementById('output').innerHTML = "Incorrect😢";
+
     }
-    document.getElementById('output').innerHTML = output;
+
 }
