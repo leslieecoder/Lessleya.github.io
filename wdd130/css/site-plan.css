@@ -37,7 +37,7 @@ header {
     padding: 1em;
     text-align: center;
     color: var(--accent2-color);
-    background-color:
+    background-color: pink;
 }
 
 header>h1 {
@@ -46,7 +46,7 @@ header>h1 {
 
 p {
     font-family: var(--paragraph-font);
-    color: ;
+    color: pink;
     padding: 1em
 }
 
@@ -101,10 +101,10 @@ nav a {
 
 nav a:link,
 nav a:visited {
-    color:
+    color: red;
 }
 
 nav a:hover {
     color: #E7C24F;
-    background-color:
+    background-color: pink
 }
