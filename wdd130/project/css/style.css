@@ -348,3 +348,19 @@
                             text-shadow: 2px 2px 4px #000000;
                             margin-top: 130px;
                         }
+                        /*Temple SPOTLIGHT */
+                        
+                        .temple-paragraph {
+                            font-weight: bold;
+                            font-family: roboto;
+                            font-size: 4em;
+                            text-align: left;
+                            color: white;
+                            text-shadow: 2px 2px 4px #000000;
+                            margin-top: 130px;
+                        }
+                        
+                        .imagetemple {
+                            height: 240px;
+                            width: auto;
+                        }
