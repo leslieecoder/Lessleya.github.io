@@ -360,7 +360,14 @@
                             margin-top: 130px;
                         }
                         
-                        .imagetemple {
-                            height: 240px;
+                        .imagetemple1 {
+                            height: 400px;
                             width: auto;
+                            margin-top: 80px;
+                        }
+                        
+                        .imagetemple2 {
+                            height: 300px;
+                            width: auto;
+                            margin-bottom: 50px;
                         }
