@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Temple Inn & Suites | Your Home Away From Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Temple Inn & Suites, located in Bethesda, Maryland, builds & manages hotels near temples of The Church of Jesus Christ of Latter-day Saints." />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <img src="images/newlogo.png" alt="logo placeholder" />
+        </picture>
+        <section class="heading">
+            <h1>Temple Inn & Suites</h1>
+        </section>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="inactive" href="amenities.html">Amenities</a></li>
+                <li><a class="inactive" href="temple-spotlight.html">Temple Spotlight</a></li>
+                <li><a class="inactive" href="reservations.html">Reservations</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-grid">
+            <img class="hero" src="images/compu.jpg" alt=" compu" />
+            <div class="action">
+                <h2 class="action-paragraph3">Reservations</h2>
+
+            </div>
+        </section>
+        </div>
+        <div id="feedback"></div>
+        <form action="/form-page" method="post">
+            <ul class="reservations-ul">
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" placeholder="full name" required />
+                </li>
+                <li>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="user_address" placeholder="123 Street, City, State, Zip" required></textarea>
+                </li>
+                <li>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email" placeholder="user@domain.com" required />
+                </li>
+                <li>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="user_phone" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                </li>
+                <li>
+                    <label for="arrival">Arrival:</label>
+                    <input type="date" id="arrival" name="arrival" required/>
+                </li>
+                <li>
+                    <label for="nights">Nights:</label>
+                    <input type="number" id="nights" name="user_nights" required/>
+                </li>
+                <li>
+                    <label for="rooms">Rooms:</label>
+                    <input type="number" id="rooms" name="user_rooms" required />
+                </li>
+                <li>
+                    <label for="msg">Notes:</label>
+                    <textarea id="msg" name="user_notes" placeholder="type here" required></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Submit </button>
+                </li>
+            </ul>
+        </form>
+        <!-- </div> -->
+        <script>
+            // get the feedback div element so we can do something with it.
+            const feedbackElement = document.getElementById("feedback");
+            // get the form element so we can read what was entered in it.
+            const formElement = document.forms[0];
+
+            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+            formElement.addEventListener("submit", function(e) {
+                // stop the form from doing the default action
+                e.preventDefault();
+                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                feedbackElement.innerHTML =
+                    "Hello " +
+                    formElement.user_name.value +
+                    "! Thank you for your message. We will get back with you as soon as possible!";
+                // make the feedback element visible.
+                feedbackElement.style.display = "block";
+            });
+        </script>
+    </main>
+
+    <footer>
+        <div class="footer-flex">
+            <div class="address">
+                <p><b> Temple Inn & Suites Headquarters</b><br/>📍 355 Wisconsin Avenue, Bethesda, MD 20814<br/>📞 258 567 8389 | info@templeinn.com 📧</p>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com" target="_blank" rel="noopener"><img src="images/logotwitter.png" alt="twitter icon" height="25" /></a>
+                <a href="https://instagram.com" target="_blank" rel="noopener"><img src="images/logoinsta.png" alt="instagram icon" height="25" /></a>
+                <a href="https://facebook.com" target="_blank" rel="noopener"><img src="images/logofb.png" alt="facebook icon" height="25" /></a>
+            </div>
+        </div>
+        <div class="print">
+            <p>
+                &copy;2020 &bull; Lesliee Cruz &bull; BYU-Idaho &bull; CIT 160
+        </div>
+    </footer>
+</body>
+
+</html>
