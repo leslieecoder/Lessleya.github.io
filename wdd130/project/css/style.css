@@ -139,11 +139,13 @@
                             font-size: 1.5rem;
                             color: black;
                             padding-top: 10px;
-                            padding-left: 10px;
+                            padding-left: 50px;
                         }
                         
                         .main-heading-center {
                             text-align: center;
+                            padding-left: 50px;
+                            padding-right: 50px;
                         }
                         /*Grid Home Page*/
                         
@@ -164,7 +166,7 @@
                         }
                         
                         .mid-left {
-                            padding-left: 20px;
+                            padding-left: 50px;
                         }
                         
                         .mid-right {
@@ -179,7 +181,9 @@
                         
                         .block {
                             font-family: 'Open Sans', sans-serif;
-                            padding: 1em;
+                            padding-left: 50px;
+                            padding-right: 50px;
+                            padding-bottom: 30px;
                         }
                         
                         .imagenhome {
