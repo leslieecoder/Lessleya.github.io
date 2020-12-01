@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumple de mario</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        header,
+        footer {
+            background-color: rgb(198, 27, 250);
+            color: rgb(245, 165, 238);
+            padding: 10px;
+        }
+        
+        footer {
+            font-size: 13px;
+            letter-spacing: 1.5pt;
+        }
+        
+        h1,
+        h2 {
+            margin: 0;
+        }
+        
+        h2,
+        #currentdate {
+            color: rgb(248, 233, 167);
+        }
+        
+        main {
+            margin: 10px auto;
+            border: 1px solid rgb(242, 198, 255);
+            padding: 10px;
+            max-width: 500px;
+            background-color: rgb(245, 35, 151);
+            box-shadow: 0 0 30px;
+        }
+        
+        h3 {
+            font-size: 24px;
+            margin: 0 0 15px 0;
+            border-bottom: 1px solid rgb(90, 3, 107);
+            padding: 0;
+        }
+        
+        label {
+            display: block;
+            margin: 5px;
+        }
+    </style>
+    <!--External CSS reference-->
+</head>
+
+<body>
+    <header>
+        <h1>🎉🎉🎉🎉FELIZ CUMPLE MARY🎉🎉🎉🎉 </h1>
+        <h2>This website has been designed specially for Mary Eargle </h2>
+    </header>
+    <main>
+        <h3>🌎❤Hoy es el mejor dia del mundooo❤🌎</h3>
+        <h4>"El amor se deletrea T-I-E-M-P-O"</h4>
+        <h4>-Dieter F. Utchford</h4>
+        <div>El tiempo es una muestra del amor de Dios⌛.</div>¿Sabes cuanto te ama?</h5>
+        <label>Dime, ¿cuantos años cumples? <input type="text" id="number1"></label>
+        <label><button onclick="addtacos()"></button></label>
+        <hr>
+        <p id="output"></p>
+
+    </main>
+    <footer>
+        <h4>Siempre que te sientas triste vuelve a esta pagina y recuarda cuanto Dios te ama. Y tambien yo.</h4>
+
+        &copy;8 de Octubre de 2020 &bull; Con carino de Lesliee Cruz &bull; BYU-Idaho &bull; Soy un pug🐶
+    </footer>
+    <script>
+        function addtacos() {
+            // INPUT: Number of tacos.
+            let number1 = document.getElementById("number1").value;
+
+            // PROCESSING: Add the number of tacos that yo and you friend can eat.
+            //convert the string to numbers using parseFloat
+            number1 = parseFloat(number1);
+
+            //add the two numbers together and stere in my output variable
+            let result = number1 * 31536000;
+            // OUTPUT: Display how many tacos you and your friend can eat together.
+            document.getElementById("output").innerHTML = "Wow! Dios te ha regalado " + result + " <strong> segundos</strong> hasta ahora! <div> Asi como este numero es tan grande, asi es el amor que Dios y Jesucristo tienen por ti❤ Cada segundo de tu vida es muy valioso y una muestra de amor de ellos. Gracias por compartir un poco de ese valioso tiempo conmigo. </div>Gracias por todo lo que has hecho por mi pequeno pug." + "<div> <h4>❤️Te tiempo❤️</div>" + "<img src=images/jesus.jpg width='420px' height='512px'>" + "<img src=images/mario.PNG width='420px' height='512px'>";
+        }
+    </script>
+</body>
+
+</html>
