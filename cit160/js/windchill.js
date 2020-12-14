@@ -4,24 +4,29 @@
   * Output: chill
   */
 
- //Javascript Code Here
  function doInputOutput() {
-     //Input:
-     let tempF = parseFloat(document.getElementById('temperature').value);
-     let speed = parseFloat(document.getElementById('windSpeed').value);
+     /*Input*/
+     let temperature = parseFloat(document.getElementById("temperature").value);
+     let windspeed = parseFloat(document.getElementById("windspeed").value);
+     let text = " ";
+     let f;
 
-     //Processing:
-     let chill = windChill(tempF, speed)
+     /*Process*/
+     if (windspeed < 3) {
+         text = "The windspeed is low";
+     } else if (temperature > 50)
+         text = "The temperature is high";
+     else {
+         f = windChill(temperature, windspeed)
+     }
 
-     //Output:
-     document.getElementById('output').innerHTML = chill;
+     /*Output*/
+     document.getElementById('output1').innerHTML = f;
+     document.getElementById('output2').innerHTML = text;
  }
 
- function windChill(tempF, speed) {
-     /*
-      * Input: tempF, speed as Float
-      * Processing, Output: (35.74 + 0.6215 * tempF) - (35.75 * (speed ** 0.16)) + (0.4275 * tempF * (speed ** 0.16))
-      */
-     //Output:
-     return (35.74 + 0.6215 * tempF) - (35.75 * (speed ** 0.16)) + (0.4275 * tempF * (speed ** 0.16))
+ function windChill(temperature, windspeed) {
+     f = 35.42 + (0.6215 * temperature) - (35.75 * windspeed ** 0.16) + (0.4275 * temperature *
+         windspeed ** 0.16)
+     return f;
  }
