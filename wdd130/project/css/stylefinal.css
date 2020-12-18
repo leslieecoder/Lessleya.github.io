@@ -13,7 +13,6 @@ main {
 header {
     padding: 5px 0;
     display: flex;
-    align-items: rigth;
     justify-content: space-evenly;
     background-color: #1d02b3;
 }
