@@ -13,7 +13,7 @@ main {
 header {
     padding: 5px 0;
     display: flex;
-    align-items: right;
+    align-items: rigth;
     justify-content: space-evenly;
     background-color: #1d02b3;
 }
@@ -122,7 +122,7 @@ img.hero {
     font-weight: bold;
     font-family: 'Open Sans', sans serif;
     background-color: hsl(54, 89%, 50%);
-    font-size: 1emem;
+    font-size: 1em;
     border-color: hsl(54, 89%, 50%);
     padding: 9px;
     margin-left: -480px;
