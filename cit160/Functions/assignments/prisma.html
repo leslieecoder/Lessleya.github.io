@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Prisma Area</title>
+
+    <script>
+        /* Input: FarentheithValue
+         * Processing: Compute the area of a triangle
+         *     with side lengths 4, 2, and 5
+         * Output: The area of the triangle
+         */
+
+        function doInputOutput() {
+            let a = parseInt(document.getElementById('a').value);
+            let b = parseInt(document.getElementById('b').value);
+            let c = parseInt(document.getElementById('c').value);
+            let length = parseInt(document.getElementById('length').value);
+            let vol = prismVolume(a, b, c, length);
+
+            document.getElementById('outputDiv').innerHTML = "The volume is " + vol;
+
+
+            // Computes and returns the area of a
+            // triangle with side lengths a, b, and c.
+
+            function prismVolume(a, b, c, length) {
+                let area = triangleArea(a, b, c);
+                let volume = area * length;
+
+                return volume.toFixed(2);
+
+            }
+
+            function triangleArea(a, b, c) {
+                let s = (a + b + c) / 2;
+                let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+                return area;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Prisma Area</h1>
+    Side a: <input type="text" id="a"><br> Side b: <input type="text" id="b"></br><br> Side c: <input type="text" id="c"><br> </br><br> length: <input type="text" id="length"><br>
+    <button type="button" onclick="doInputOutput()">volume</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>

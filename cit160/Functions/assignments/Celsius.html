@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Farentheit to Celsius</title>
+
+    <script>
+        /* Input: FarentheithValue
+         * Processing: Compute the area of a triangle
+         *     with side lengths 4, 2, and 5
+         * Output: The area of the triangle
+         */
+
+        function doInputOutput() {
+            let far = parseInt(document.getElementById('farentheit').value);
+            let cel = fahrToCels(far);
+            document.getElementById('outputDiv').innerHTML = far + "Farenheit is " + cel;
+            cel + " Celsius.";
+
+            // Computes and returns the area of a
+            // triangle with side lengths a, b, and c.
+
+            function fahrToCels(far) {
+                let celsius = (far - 32) * 5 / 9;
+
+                return celsius.toFixed(2);
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>farentheit to Celsius</h1>
+    Farentheit <input type="text" id="farentheit">
+    <button type="button" onclick="doInputOutput()">Celsius</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>

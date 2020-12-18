@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>How Long to Invest</title>
+
+    <script>
+        /* Input: No user input
+         * Processing: Determine the number of months required
+         *     to grow an initial investment from $100 to at
+         *     least $103 if it grows at an annual rate of 6%.
+         * Output: The number of months.
+         */
+        function testInvest() {
+            let m = determineMonths(100, 0.06, 103);
+            document.getElementById('outputDiv').innerHTML = m;
+        }
+
+        // Computes and returns the number of months
+        // needed for principal invested at a constant
+        // annual rate to grow to a target amount.
+        function determineMonths(principal, annualRate, target) {
+            let monthlyRate = annualRate / 12;
+            let balance = principal;
+            let month = 0;
+
+            // Repeat while the balance of the
+            // investment is less than the target.
+            while (balance < target) {
+                let interest = Math.round(balance * monthlyRate * 100) / 100;
+                balance += interest;
+                month++;
+            }
+
+            return month;
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="testInvest()">Test</button>
+    <div id="outputDiv"></div>
+</body>
+
+</html>

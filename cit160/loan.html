@@ -1,39 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIT:160 Program W11 Loan</title>
-    <link rel="stylesheet" href="css/style.css">
-    <!--External CSS reference-->
-</head>
+<html lang="en-us">
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css">
+<title> CIT:160 W11 | Loan Calculator</title>
 
 <body>
-    <header>
-        <h1>🤑Loan🤑</h1>
-        <h2>Lesliee Cruz</h2>
-    </header>
-    <main>
-        <h3>Loan Calculator</h3>
-        <label>Amount Borrowed: <input type="text" id="amountB"></label>
-        <label>Annual Rate: <input type="text" id="annualR"></label>
-        <label>Number of Years: <input type="text" id="numberYears"></label>
-        <label>Periods per Year: <input type="text" id="PerYear"></label>
-        <select name="select" id="selector">
-            <option value>Select one</option>
-            <option value="payment">Payment</option>
-            <option value="balance">Balance</option>
-          </select>
-        <label><button onclick="selector()">Compute Value</button></label>
-        <hr>
-        <p><span id="output"></span></p>
-    </main>
-    <footer>
-        &copy;2020 &bull; Lesliee Cruz &bull; BYU-Idaho &bull; CIT 160
-    </footer>
-    <script src="js/loan.js">
-    </script>
+    <h1>Loan Calculator</h1>
+    <h2>Lesliee Cruz</h2>
+    <label>Amount Borrowed (Principal) <input type="text" id="amountBorrowed"></label><br>
+    <label>Annual Rate <input type="text" id="annualRate" ></label><br>
+    <label>Number of Years <input type="text" id="numberYears"></label><br>
+    <label>Payments per Year <input type="text" id="periodsPerYears"></label><br>
+    <label>Number of Payments Paid to Date <input type="text" id="payment"></label><br>
+    <button type="button" onclick="doPayment()">Payment</button><br>
+    <div id="output1"></div>
+    <p></p>
+    <button type="button" onclick="doBalance()">Balance</button><br>
+    <div id="output2"></div>
+
+    <script src="js/loan.js"></script>
 </body>
+
+<footer>
+    <p></p>
+    &copy;2020 &bull; Lesliee Cruz &bull; BYU-Idaho &bull; CIT 160
+</footer>
 
 </html>
