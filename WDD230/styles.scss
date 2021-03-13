@@ -1,0 +1,364 @@
+@import 'typography';
+@import 'icons';
+$sm-break: 48em;
+// colors
+$dark-gray: #727272;
+$med-gray: #b4b3b5;
+$light-gray: #eaeaea;
+$body-font: #020202;
+$link-blue: #0076b6; //why do we have both of these blues?
+$byui-blue: #056cb6;
+// Utility classes
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+//breakpoint sizes
+$break-small: 900px;
+$break-large: 901px;
+//mixins
+@mixin small {
+    @media (max-width: $break-small) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: $break-large) {
+        @content;
+    }
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+header {
+    background-color: $link-blue;
+}
+
+.site-banner {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    width: 100%;
+    form {
+        display: none;
+    }
+    .site-banner__right {
+        align-items: center;
+        display: flex;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.site-header {
+    background-color: $light-gray;
+    color: $dark-gray;
+    padding: 15px;
+    h1 {
+        font-weight: normal;
+        font-size: 1em;
+        a {
+            margin-left: 4em;
+            color: $dark-gray;
+            font-family: 'BYUI Open Sans';
+            &:hover {
+                color: $dark-gray;
+            }
+            &:visited {
+                color: $dark-gray;
+                font-weight: normal;
+                font-size: 1em;
+            }
+        }
+    }
+}
+
+main {
+    font-family: 'BYUI Open Sans';
+    @include small {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    @include large {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr .5fr .5fr;
+    }
+    padding: 1em;
+    div.firstPic {
+        a {
+            @include large {
+                display: flex;
+                justify-self: center;
+            }
+        }
+        @include small {
+            width: 90%;
+        }
+        @include large {
+            width: 100%;
+            align-self: center;
+            justify-self: center;
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+            margin-bottom: .5em;
+        }
+    }
+    button {
+        border: 1px solid $dark-gray;
+        display: block;
+        padding: 10px 18px;
+        text-align: left;
+        width: 80%;
+        background-color: $light-gray;
+        border-radius: .3em;
+        margin: 1em 0;
+        @include large {
+            grid-column: 2 / 3;
+            grid-row: 1 /2;
+            padding: 1em;
+            height: fit-content;
+            align-self: flex-start;
+            justify-self: center;
+        }
+    }
+}
+
+div.figure {
+    @include large {
+        display: flex;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        align-self: center;
+        justify-self: center;
+    }
+    figure {
+        @include large {
+            margin: .3em;
+        }
+        border: 1px solid $med-gray;
+        padding: .5em;
+        width: max-content;
+        height: max-content;
+        a {
+            color: $byui-blue;
+        }
+        figcaption {
+            padding: 6px 12px;
+            color: $byui-blue;
+        }
+    }
+}
+
+aside.linkImp {
+    width: 85%;
+    margin-bottom: 36px;
+    @include large {
+        grid-column: 2 /3;
+        grid-row: 1 / 3;
+        align-self: center;
+        justify-self: center;
+        margin-top: 2em;
+    }
+    h3 {
+        background-color: $dark-gray;
+        font-size: 22px;
+        margin: 0;
+        padding: 10px 20px;
+        color: #fff;
+        font-weight: normal;
+    }
+    div {
+        a.linkAside {
+            display: block;
+            background-color: $light-gray;
+            border-bottom: 1px solid $med-gray;
+            border-left: 1px solid $med-gray;
+            border-right: 1px solid $med-gray;
+            color: $link-blue;
+            padding: 8px 20px;
+        }
+    }
+}
+
+aside.calendar {
+    @include large {
+        grid-column: 2 / 3;
+        grid-row: 2 / 4;
+        align-self: center;
+        justify-self: center;
+        width: 85%;
+        margin-top: 4.2em;
+    }
+    margin-bottom: 36px;
+    h3 {
+        background-color: $byui-blue;
+        font-size: 22px;
+        margin: 0;
+        padding: 10px 20px;
+        color: #fff;
+        font-weight: normal;
+    }
+    div.highlightsCal {
+        a.row {
+            background-color: #fff;
+            border-left: none;
+            border-right: none;
+            font-size: 13px;
+            color: #020202;
+            padding: 8px 20px;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid $med-gray;
+            .col-3 {
+                font-weight: 700;
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+                max-width: 25%
+            }
+            .col {
+                -ms-flex-preferred-size: 0;
+                flex-basis: 0;
+                -webkit-box-flex: 1;
+                -ms-flex-positive: 1;
+                flex-grow: 1;
+                max-width: 100%;
+            }
+            .col-8 {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 66.6666666667%;
+                flex: 0 0 66.6666666667%;
+                max-width: 66.6666666667%;
+            }
+        }
+    }
+}
+
+aside.uniMessage {
+    @include large {
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+        align-self: center;
+        justify-self: center;
+    }
+    border: 1px solid $med-gray;
+    padding: 0;
+    width: max-content;
+    height: max-content;
+    h3 {
+        background-color: $light-gray;
+        color: $body-font;
+        font-size: 18px;
+        margin: 0;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+    span.devo {
+        background-color: $byui-blue;
+        color: white;
+        padding: .5em;
+        display: block;
+    }
+}
+
+aside.uniMessage {
+    margin-bottom: 36px;
+    div {
+        div.fLeft {
+            float: left;
+            margin: 0 0 1em 0;
+            height: 11em;
+            width: auto;
+            img {
+                height: 100%;
+            }
+        }
+        div.fRight {
+            float: right;
+            background-color: $dark-gray;
+            color: white;
+            height: 11em;
+            width: auto;
+            padding: .9em;
+            span {
+                margin: .7em 0;
+                font-size: .6em;
+            }
+            h4 {
+                margin: .7em 0;
+                font-size: 1em;
+            }
+            p {
+                margin: .7em 0;
+                font-size: .8em;
+            }
+        }
+    }
+}
+
+div.newsArt {
+    padding: 1em;
+    @include large {
+        grid-column: 1 / 2;
+        grid-row: 4 / 6;
+        align-self: flex-start;
+        justify-self: center;
+        width: 90%;
+    }
+    article {
+        border-bottom: 1px solid $dark-gray;
+        border-top: 1px solid $dark-gray;
+        img {
+            @include large {
+                max-width: 100%;
+                display: block;
+                float: left;
+                margin-right: .5em;
+            }
+            display: none;
+        }
+        span {
+            margin: .5em 0;
+            display: block;
+            font-size: .9em;
+            color: $body-font;
+            font-weight: 800;
+        }
+        a {
+            color: $link-blue;
+            font-size: .8em;
+            font-weight: bolder;
+        }
+        p {
+            color: $body-font;
+            font-size: .7em;
+        }
+    }
+}
