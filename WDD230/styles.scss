@@ -35,7 +35,14 @@ $break-large: 901px;
 
 img {
     max-width: 100%;
-    margin: 0 auto;
+}
+
+body {
+    background-color: #fff;
+    color: #020202;
+    font-family: "BYUI Open Sans", "Open Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, sans-serif;
+    font-weight: 400;
+    margin: 0;
 }
 
 .sr-only {
@@ -264,7 +271,7 @@ aside.calendar {
 aside.uniMessage {
     @include large {
         grid-column: 2 / 3;
-        grid-row: 3 / 5;
+        grid-row: 4 / 5;
         align-self: center;
         justify-self: center;
     }
@@ -360,11 +367,5 @@ div.newsArt {
             color: $body-font;
             font-size: .7em;
         }
-    }
-}
-
-li {
-    a {
-        color: white;
     }
 }
