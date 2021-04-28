@@ -31,7 +31,7 @@
     background-color: #000;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white !important;
     height: 100%;
     width: 3em;
     font-size: 1.7em;
@@ -39,14 +39,35 @@
 
 .icon-search:before {
     content: '\e922';
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 2em;
 }
 
 .icon-audience:before {
     content: '\e991';
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 2em;
 }
 
 .icon-menu:before {
     content: '\e9b9';
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    width: 2em;
 }
 
 .icon-address-book:before {
