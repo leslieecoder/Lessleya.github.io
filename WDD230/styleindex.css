@@ -2,10 +2,7 @@
 header {
     background-color: #a75f7d;
     padding: 5px 0;
-    display: flex;
-    justify-content: space-evenly;
     color: white;
-    margin-top: -40px;
 }
 
 .logo {

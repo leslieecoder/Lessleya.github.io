@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Raleway:ital,wght@0,100;1,100&family=Roboto:wght@100&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px;
+    background-color: #a75f7d;
+    text-align: center;
+    color: white;
+}
+
+header h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: pink;
+}
+
+div {
+    padding: 20px;
+    background-color: rgb(253, 248, 199);
+}
+
+nav a {
+    color: purple;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(253, 248, 199);
+    padding: 20px;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #5e1030;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(185, 162, 207)
+}
+
+img {
+    width: 50%;
+}
+
+li {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
