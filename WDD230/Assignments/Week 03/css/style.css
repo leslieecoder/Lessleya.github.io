@@ -108,6 +108,9 @@
         .nav-active {
             transform: translate(0%);
         }
+        .grid-container {
+            grid-template-columns: auto;
+        }
     }
     
     @keyframes navlinkfade {
