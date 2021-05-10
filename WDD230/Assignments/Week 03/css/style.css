@@ -1,0 +1,118 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: poppins, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 30px 70px;
+        background-color: #EA9D90;
+    }
+    
+    .nav-area {
+        list-style: none;
+    }
+    
+    .nav-area li {
+        display: inline-block;
+        padding: 0 15px;
+        text-transform: uppercase;
+    }
+    
+    .nav-area li a {
+        color: white;
+    }
+    
+    .nav-area li a:hover {
+        color: rgb(248, 248, 144);
+        border-bottom: 3px solid aquamarine;
+    }
+    
+    .logo {
+        width: 18%;
+        padding: 0;
+    }
+    
+    .burger {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background-color: #D8E2DC;
+        margin: 5px;
+    }
+    
+    footer {
+        background-color: #EA9D90;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #FFE5D9;
+        padding: 40px;
+        justify-content: space-between;
+    }
+    
+    .grid-container img {
+        width: 80%;
+        margin: 40px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        body {
+            overflow: hidden;
+        }
+        .logo {
+            width: 70%;
+        }
+        .nav-area {
+            position: absolute;
+            right: 0px;
+            height: 92vh;
+            top: 8vh;
+            background-color: #EA9D90;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            transform: translate(100%);
+            transition: 0.5s ease-in;
+        }
+        .nav-area li {
+            opacity: 0;
+        }
+        .burger {
+            display: block;
+        }
+        .nav-active {
+            transform: translate(0%);
+        }
+    }
+    
+    @keyframes navlinkfade {
+        from {
+            opacity: 0;
+            transform: translate(50px)
+        }
+    }
