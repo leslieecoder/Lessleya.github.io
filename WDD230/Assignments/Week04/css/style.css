@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.logo {
+    width: 60px;
+    margin: 5px;
+}
+
+header p {
+    font-family: poppins, sans-serif;
+    font-size: 10px;
+    margin: 0;
+}
+
+.heading h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(0, 195, 255);
+    margin-top: -16px;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    color: black;
+    background-color: rgb(241, 241, 146);
+}
+
+.responsive li {
+    display: block;
+}
+
+.contentbox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000;
+    padding: 15px;
+    background-color: #eee;
+    color: #444;
+    font-style: italic;
+}
+
+
+/* Media Query for medium+ views */
+
+@media only screen and (min-width: 32.5em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .logo {
+        width: 120px;
+        margin: 10px;
+    }
+    header p {
+        font-family: poppins, sans-serif;
+        font-size: 20px;
+        margin: 0;
+    }
+    .heading h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+    footer {
+        font-family: poppins, sans-serif;
+        background-color: rgb(0, 0, 0);
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 10px;
+        margin: 20px 0 20px 0;
+    }
+}
+
+footer {
+    font-family: poppins, sans-serif;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}

@@ -20,7 +20,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        padding: 30px 70px;
+        padding: 10px 70px;
         background-color: #EA9D90;
     }
     
@@ -41,6 +41,7 @@
     .nav-area li a:hover {
         color: #f3ebbc;
         border-bottom: 3px solid #FFCAD4;
+        transition: 0.5s;
     }
     
     .logo {
@@ -54,6 +55,8 @@
     }
     
     .burger div {
+        display: flex;
+        justify-content: flex-end;
         width: 25px;
         height: 3px;
         background-color: #D8E2DC;
