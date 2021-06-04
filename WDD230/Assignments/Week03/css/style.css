@@ -1,0 +1,112 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    body {
+        font-family: poppins, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        margin: 30px;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    body h2 {
+        font-family: 'Pacifico', cursive;
+        color: #9D8189;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 10px 70px;
+        background-color: #EA9D90;
+    }
+    
+    .nav-area {
+        list-style: none;
+    }
+    
+    .nav-area li {
+        display: inline-block;
+        padding: 0 15px;
+        text-transform: uppercase;
+    }
+    
+    .nav-area li a {
+        color: white;
+    }
+    
+    .nav-area li a:hover {
+        color: #f3ebbc;
+        border-bottom: 3px solid #FFCAD4;
+        transition: 0.5s;
+    }
+    
+    .logo {
+        width: 18%;
+        padding: 0;
+    }
+    
+    .burger {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .burger div {
+        display: flex;
+        justify-content: flex-end;
+        width: 25px;
+        height: 3px;
+        background-color: #D8E2DC;
+        margin: 5px;
+    }
+    
+    footer {
+        background-color: #EA9D90;
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #FFE5D9;
+        padding: 40px;
+        justify-content: space-between;
+    }
+    
+    .grid-container img {
+        width: 80%;
+        margin: 40px;
+    }
+    
+    @media screen and (max-width: 768px) {
+        body {
+            overflow: hidden;
+        }
+        .logo {
+            width: 70%;
+        }
+        .nav-area li {
+            opacity: 0;
+        }
+        .burger {
+            display: block;
+        }
+        .nav-active {
+            transform: translate(0%);
+        }
+        .grid-container {
+            grid-template-columns: auto;
+        }
+    }
+    
+    @keyframes navlinkfade {
+        from {
+            opacity: 0;
+            transform: translate(50px)
+        }
+    }

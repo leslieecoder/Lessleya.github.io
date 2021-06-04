@@ -4,16 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cumple de mario</title>
+    <title>Andy💐</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
         body {
             text-align: center;
+            background-image: url("../mario/images/flowers.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
         }
         
         header,
         footer {
-            background-color: rgb(198, 27, 250);
-            color: rgb(245, 165, 238);
+            background-color: rgb(231, 129, 177);
+            color: rgb(138, 56, 90);
             padding: 10px;
         }
         
@@ -22,9 +29,9 @@
             letter-spacing: 1.5pt;
         }
         
-        h1,
-        h2 {
+        h1 {
             margin: 0;
+            font-family: 'Dancing Script', cursive;
         }
         
         h2,
@@ -34,11 +41,8 @@
         
         main {
             margin: 10px auto;
-            border: 1px solid rgb(242, 198, 255);
             padding: 10px;
             max-width: 500px;
-            background-color: rgb(245, 35, 151);
-            box-shadow: 0 0 30px;
         }
         
         h3 {
@@ -52,30 +56,44 @@
             display: block;
             margin: 5px;
         }
+        
+        .button {
+            background-color: rgb(252, 137, 194);
+            color: white;
+        }
     </style>
     <!--External CSS reference-->
 </head>
 
 <body>
     <header>
-        <h1>🎉🎉🎉🎉FELIZ CUMPLE MARY🎉🎉🎉🎉 </h1>
-        <h2>This website has been designed specially for Mary Eargle </h2>
+        <h1>💐Feliz Cumpleanos Andy💐 </h1>
+        <h2>Este website fue disenado especialmente para Andy Regino </h2>
     </header>
     <main>
+
         <h3>🌎❤Hoy es el mejor dia del mundooo❤🌎</h3>
         <h4>"El amor se deletrea T-I-E-M-P-O"</h4>
         <h4>-Dieter F. Utchford</h4>
-        <div>El tiempo es una muestra del amor de Dios⌛.</div>¿Sabes cuanto te ama?</h5>
+        <div>El tiempo es una muestra del amor de Dios⌛.</div>¿Sabes cuanto te ama?
         <label>Dime, ¿cuantos años cumples? <input type="text" id="number1"></label>
-        <label><button onclick="addtacos()"></button></label>
+        <label><button class="button" onclick="addtacos()">❤️Quiero Saber cuanto Dios me ama❤️</button></label>
         <hr>
         <p id="output"></p>
 
+        <div>
+            <div>Espero que te guste la musiquita❤.</div>
+            <audio controls autoplay>
+            <source src="images/happy.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        </div>
+
     </main>
     <footer>
-        <h4>Siempre que te sientas triste vuelve a esta pagina y recuarda cuanto Dios te ama. Y tambien yo.</h4>
+        <h4>Gracias por compartir parte de esos segundos conmigo. Eres mi mejor amiga!!💐💐</h4>
 
-        &copy;8 de Octubre de 2020 &bull; Con carino de Lesliee Cruz &bull; BYU-Idaho &bull; Soy un pug🐶
+        &copy;3 de Junio de 2021 &bull; Con carino de Less &bull; BYU-Idaho &bull; Te adoro Amix!!🐶
     </footer>
     <script>
         function addtacos() {
@@ -89,7 +107,7 @@
             //add the two numbers together and stere in my output variable
             let result = number1 * 31536000;
             // OUTPUT: Display how many tacos you and your friend can eat together.
-            document.getElementById("output").innerHTML = "Wow! Dios te ha regalado " + result + " <strong> segundos</strong> hasta ahora! <div> Asi como este numero es tan grande, asi es el amor que Dios y Jesucristo tienen por ti❤ Cada segundo de tu vida es muy valioso y una muestra de amor de ellos. Gracias por compartir un poco de ese valioso tiempo conmigo. </div>Gracias por todo lo que has hecho por mi pequeno pug." + "<div> <h4>❤️Te tiempo❤️</div>" + "<img src=images/jesus.jpg width='420px' height='512px'>" + "<img src=images/mario.PNG width='420px' height='512px'>";
+            document.getElementById("output").innerHTML = "Wow! Dios te ha regalado " + result + " <strong> segundos</strong> hasta ahora! <div> Asi como este numero es tan grande, asi es el amor que Dios y Jesucristo tienen por ti❤ Cada segundo de tu vida es muy valioso y una muestra de amor de ellos. Gracias por compartir parte de ese tiempo conmigo!. </div>Siempre seras mi mejor amiga💐" + "<div> <h4>❤️Te tiempo❤️</div>" + "<img src=images/andy.jpg width='100%'>";
         }
     </script>
 </body>
