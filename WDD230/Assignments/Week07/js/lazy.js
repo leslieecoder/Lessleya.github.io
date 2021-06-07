@@ -1,4 +1,4 @@
-const imagesToLoad = document.querySelectorAll('img[data-src]');
+const imagesToLoad = document.querySelectorAll('[data-src]');
 
 //Optionla parameters being set for the IntersectionalObserver
 
