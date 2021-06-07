@@ -4,14 +4,16 @@ import random
 def main():
 
     quantity = input("Please enter 1 or 2: ")
-    tense = input("Please enter a tense (future, past or tense):")
+    tense = input("Please enter a tense (future, past or present):")
 
     determiner = get_determiner(quantity)
     noun = get_noun(quantity)
     verb = get_verb(quantity, tense)
+    phrase = get_prepositional_phrase(quantity)
 
     # Print the results for the user to see.
-    print(f" {determiner} {noun} {verb} ")
+    print(f"{determiner} {noun} {verb} ")
+    print(f"{phrase}")
     pass
 
 
@@ -52,7 +54,7 @@ def get_verb(quantity, tense):
 
 
 
-    elif tense == "prensent" and quantity != 1:
+    elif tense == "present" and quantity != 1:
 
         words = ["drink", "eat", "grow", "laugh", "think", "run", "sleep", "talk", "walk", "write"]
 
@@ -67,4 +69,35 @@ def get_verb(quantity, tense):
     word = random.choice(words)
     return word
 
-main()
+
+
+def get_prepositional_phrase(quantity):
+        """Build and return a prepositional phrase composed of three
+    words: a preposition, a determiner, and a noun by calling the
+    get_preposition, get_determiner, and get_noun functions.
+
+    Parameter
+        quantity: an integer that determines if the
+            determiner and nouns are singular or plural.
+    Return: a prepositional phrase.
+    """   
+        preposition = get_preposition()
+        determiner = get_determiner(quantity)
+        noun = get_noun(quantity)
+
+        phrase = preposition + " " + determiner + " " + noun
+
+        return phrase
+
+
+
+def get_preposition():
+    
+    words = ["about", "above", "across", "after", "along","around", "at", "before", "behind", "below","beyond", "by", "despite", "except", "for","from", "in", "into", "near", "of","off", "on", "onto", "out", "over","past", "to", "under", "with", "without"]
+
+    word = random.choice(words)
+    return word
+
+
+if __name__ == "__main__":
+    main()

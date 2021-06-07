@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7</title>
+    <style>
+        article img[src] {
+            filter: blur(0.2em);
+        }
+        
+        article img {
+            filter: blur(0em);
+            transition: filter 0.5s;
+        }
+    </style>
+    <script src="lazy.js"></script>
+</head>
+
+<body>
+    <h1>Gallery Lazy Loading</h1>
+    <picture>
+        <img src="https://picsum.photos/id/1002/200/400" data-src="placeholder.png" alt="image 1">
+    </picture>
+    <picture>
+        <img src="https://picsum.photos/id/1003/200/400" data-src="placeholder.png" alt="image 2">
+    </picture>
+    <picture>
+        <img src="https://picsum.photos/id/1004/200/400" data-src="placeholder.png" alt="image 3">
+    </picture>
+    <picture>
+        <img src="https://picsum.photos/id/1013/200/400" data-src="placeholder.png" alt="image 4">
+    </picture>
+    <picture>
+        <img src="https://picsum.photos/id/1010/200/400" data-src="placeholder.png" alt="image 5">
+    </picture>
+    <picture>
+        <img src="https://picsum.photos/id/1011/200/400" data-src="placeholder.png" alt="image 6">
+    </picture>
+</body>
+
+</html>
