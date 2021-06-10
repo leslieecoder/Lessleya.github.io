@@ -3,17 +3,24 @@ import random
 
 def main():
 
-    quantity = input("Please enter 1 or 2: ")
-    tense = input("Please enter a tense (future, past or present):")
+    # quantity = input("Please enter 1 or 2: ")
+    # tense = input("Please enter a tense (future, past or present):")
 
-    determiner = get_determiner(quantity)
-    noun = get_noun(quantity)
-    verb = get_verb(quantity, tense)
-    phrase = get_prepositional_phrase(quantity)
+    # determiner = get_determiner(quantity)
+    # noun = get_noun(quantity)
+    # verb = get_verb(quantity, tense)
+    # phrase = get_prepositional_phrase(quantity)
 
     # Print the results for the user to see.
-    print(f"{determiner} {noun} {verb} ")
-    print(f"{phrase}")
+
+   
+    print(f"{get_determiner(1)} {get_noun(1)} {get_verb(1,'past')} {get_prepositional_phrase(1)} ")
+    print(f"{get_determiner(2)} {get_noun(2)} {get_verb(1,'past')} {get_prepositional_phrase(2)} ")
+    print(f"{get_determiner(1)} {get_noun(1)} {get_verb(1,'present')} {get_prepositional_phrase(1)} ")
+    print(f"{get_determiner(2)} {get_noun(2)} {get_verb(1,'present')} {get_prepositional_phrase(2)} ")
+    print(f"{get_determiner(1)} {get_noun(1)} {get_verb(1,'future')} {get_prepositional_phrase(1)} ")
+    print(f"{get_determiner(2)} {get_noun(2)} {get_verb(1,'future')} {get_prepositional_phrase(2)} ")
+
     pass
 
 
