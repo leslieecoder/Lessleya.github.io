@@ -10,7 +10,7 @@
     sequential  module content. The project provides opportunities to apply the concepts presented in the
      weeks by planning, designing, developing, and maintaining a weather related site. This project will
       prepare you with a foundation upon which to complete the term project at the end of the semester.">
-    <title>Preston Town Page | Week 04</title>
+    <title>Storm Center | Week 08</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="normalize" href="css/normalize.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -35,88 +35,87 @@
         <nav>
             <ul class="navigation" style="width:80%; margin-left: 5%;">
                 <li><a class="ham" href="#">Menu</a></li>
-                <li><a class="btn" href="#">Home</a></li>
-                <li><a class="btn active" href="#">Preston</a></li>
+                <li><a class="btn" href="../Week06/preston-6.html">Home</a></li>
+                <li><a class="btn" href="#">Preston</a></li>
                 <li><a class="btn" href="#">Soda Springs</a></li>
                 <li><a class="btn" href="#">Fish Haven</a></li>
-                <li><a class="btn" href="#">Storm Center</a></li>
-                <li><a class="btn" href="#">Gallery</a></li>
+                <li><a class="btn active" href="../Week08/stormcenter.html">Storm Center</a></li>
+                <li><a class="btn" href="../Week07/gallery-7.html">Gallery</a></li>
 
             </ul>
         </nav>
 
         <main>
-            <h2>Preston Idaho</h2>
-
-            <div class="hero-image">
-
-                <picture>
-                    <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
-                    <source media="(min-width:465px)" srcset="img_white_flower.jpg">
-                    <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
-                </picture>
-                <div class="hero-content">
-
-                    <h1>Weather summary</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi molestiae, harum velit officiis animi nesciunt beatae blanditiis.
-                    </p>
-                </div>
+            <div class="container">
+                <h3>Quick Contact</h3>
+                <h4>Contact us today, and get reply with in 24 hours!</h4>
+                <form id="contact" name="storm-form" action="../Week08/thanks.html" method="get">
+                    <div class="form-box">
+                        <label for="full-name">Full Name: </label>
+                        <input type="text" id="full-name" placeholder="Full name" maxlength="15" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="Telephone">Telephone: </label>
+                        <input type="tel" id="tel" name="tel" placeholder="555-555-555" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="Zip-code">Zip Code: </label>
+                        <input type="number" id="number" name="zip" placeholder="55555">
+                    </div>
+                    <div class="form-box">
+                        <label for="Storm-Date">Storm Date: </label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="Storm-type">Storm Type: </label>
+                        <input list="Storm-types">
+                        <datalist id="Storm-types">
+              <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tornado">
+            </datalist>
+                    </div>
+                    <div class="form-box">
+                        <label for="storm-severety">Storm Severety: </label>
+                        <input type="range" id="severety" name="severety" min="0" max="10">
+                    </div>
+                    <div class="form-box">
+                        <label for="storm-region">Storm Region: </label>
+                        <select name="storm-region" id="storm-region" form="storm-form">
+                <option value="Select Region" disabled>Select Region</option>
+                <option value="preston">Preston</option>
+                <option value="soda-springs">Soda Spring</option>
+                <option value="fish-haven">Fish Haven</option>
+              </select>
+                    </div>
+                    <div class="form-box">
+                        <label for="user-danger">User in-danger leve: </label>
+                        <input type="radio" id="yes" name="yes" value="Yes">
+                        <label for="yes">Yes</label><br>
+                        <input type="radio" id="no" name="no" value="No">
+                        <label for="female">No</label><br>
+                        <input type="radio" id="Maybe" name="maybe" value="Maybe">
+                        <label for="other">Maybe</label>
+                    </div>
+                    <div class="form-box">
+                        <label for="Additional">Additional information or comments : </label>
+                        <input type="textarea" id="Additional" name="Additional">
+                    </div>
+                    <div class="form-box">
+                        <input class="button" type="submit" value="Submit">
+                    </div>
+                </form>
+        </main>
+        <div class="contact-information" style="width:100%; display: flex;">
+            <div class="map">
+                <img src="img/location.png" alt="map-picture" style="width: 50%;">
             </div>
-            <h2>5 Day forecast</h2>
-            <div class="contentbox-forecast">
-                <div class="forecast-content">
-                    <h1>Sunday</h1>
-                    <img src="img/partly-cloudy-day-xl.png" alt="icon-forecast">
-                    <p>17° 6°</p>
-                </div>
-                <div class="forecast-content">
-                    <h1>Monday</h1>
-                    <img src="img/partly-cloudy-day-xl.png" alt="icon-forecast">
-                    <p>9° 4°</p>
-                </div>
-                <div class="forecast-content">
-                    <h1>Tuesday</h1>
-                    <img src="img/rain-xl.png" alt="icon-forecast">
-                    <p>16° 6°</p>
-                </div>
-                <div class="forecast-content">
-                    <h1>Wednesday</h1>
-                    <img src="img/storm-xl.png" alt="icon-forecast">
-                    <p>16° 6°</p>
-                </div>
-                <div class="forecast-content">
-                    <h1>Thursday</h1>
-                    <img src="img/sun-xl.png" alt="icon-forecast">
-                    <p>15° 5°</p>
-                </div>
-                <div class="forecast-content">
-                    <h1>Friday</h1>
-                    <img src="img/sun-xl.png" alt="icon-forecast">
-                    <p>21° 6°</p>
-                </div>
-                <div class="forecast-content">
-                    <h1>Saturday</h1>
-                    <img src="img/partly-cloudy-day-xl.png" alt="icon-forecast">
-                    <p>23° 6°</p>
-                </div>
-            </div>
-            <div class="article">
-                <h1>Article </h1>
-                <img src="img/articleimg.jpg" style="width:300px;height:300px;margin-left:15px;">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil amet fugiat alias molestiae facere beatae doloribus, perspiciatis officia suscipit animi tenetur est ratione. Corrupti dolores iusto, a tempora perferendis accusamus? Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Asperiores aspernatur esse officiis laborum, quaerat blanditiis iste soluta, culpa eligendi error, perferendis molestias fuga. Et voluptates, cum corporis molestiae iusto ab.</p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dicta dolor earum, ducimus, quod voluptates eius quo, possimus mollitia iusto commodi? Qui dolorem ipsa accusamus quibusdam hic repellendus minus minima! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Corporis, quaerat! Aut, beatae maxime voluptate, non repellendus ipsa facilis recusandae quaerat consequuntur, earum praesentium provident? Nostrum pariatur exercitationem sed fuga officiis!
-            </div>
-
-
-
-    </div>
-    </div>
-    </main>
-    <div class="contact-information" style="width:100%; display: flex;">
-        <div class="map">
-            <img src="img/location.png" alt="map-picture" style="width: 50%;">
         </div>
 
         <div class="information">
@@ -136,10 +135,10 @@
 
 
 
-    </div>
-    <footer>
-        <p>&copy;The weather Site | Attributions| Lesliee Cruz <span id="currentDate"></span></p>
-    </footer>
+        </div>
+        <footer>
+            <p>&copy;The weather Site | Attributions| Lesliee Cruz <span id="currentDate"></span></p>
+        </footer>
     </div>
 
 </body>

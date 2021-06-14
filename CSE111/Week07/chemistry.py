@@ -6,27 +6,40 @@
 def main():
 
     # Get a chemical formula for a molecule from the user.
-     chemical_formula = input('Type a chemical formula')
+    chemical_formula=input('Enter the molecular formula of the sample: ')
     # Get a mass in grams from the user.
-
+    mass_in_grams = float(input('Enter the mass in grams of the sample: '))
     # Call the make_periodic_table function and
     # store the periodic table in a variable.
-
+    periodic_table = make_periodic_table()
     # Call the parse_formula function to convert the
     # chemical formula given by the user to a compound
     # list that stores element symbols and the quantity
     # of atoms of each element in the molecule.
 
+    atoms_quantity = parse_formula(chemical_formula, periodic_table)
+
     # Call the compute_molar_mass function to compute the
     # molar mass of the molecule from the compound list.
 
+    molar_mass = round(compute_molar_mass(atoms_quantity, periodic_table),4)
+
     # Compute the number of moles of the sample.
 
-    # Print the molar mass.
+    number_of_moles = round(mass_in_grams/molar_mass, 4)
+
+    # Print the molar mass
+
+    print(f"{molar_mass} grams/mole")
 
     # Print the number of moles.
 
-    print(make_periodic_table())
+    print(f"{number_of_moles} grams/mole")
+
+
+    
+
+  
 
 def make_periodic_table():
 
@@ -262,5 +275,6 @@ def compute_molar_mass(symbol_quantity_list, periodic_table):
     #   Add the product into the total mass.
 
     return total_mass
-    
+
+   
 main()    
