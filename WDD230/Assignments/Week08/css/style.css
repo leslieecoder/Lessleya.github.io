@@ -276,6 +276,7 @@ footer {
     width: 100%;
     margin: 0 auto;
     position: relative;
+    padding: 20px;
 }
 
 #contact input[type="text"],
@@ -312,7 +313,7 @@ footer {
 .form-box {
     border: medium none !important;
     margin: 0 0 10px;
-    min-width: 100%;
+    min-width: 80%;
     padding: 0;
     width: 100%;
 }

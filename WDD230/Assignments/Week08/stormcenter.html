@@ -47,8 +47,10 @@
 
         <main>
             <div class="container">
+                <div class="container-title">
                 <h3>Quick Contact</h3>
                 <h4>Contact us today, and get reply with in 24 hours!</h4>
+            </div>
                 <form id="contact" name="storm-form" action="../Week08/thanks.html" method="get">
                     <div class="form-box">
                         <label for="full-name">Full Name: </label>
@@ -88,14 +90,14 @@
                     <div class="form-box">
                         <label for="storm-region">Storm Region: </label>
                         <select name="storm-region" id="storm-region" form="storm-form">
-                <option value="Select Region" disabled>Select Region</option>
+                <option value="Select Region" default disabled>Select Region</option>
                 <option value="preston">Preston</option>
                 <option value="soda-springs">Soda Spring</option>
                 <option value="fish-haven">Fish Haven</option>
               </select>
                     </div>
                     <div class="form-box">
-                        <label for="user-danger">User in-danger leve: </label>
+                        <label for="user-danger">User in-danger leve: </label><br>
                         <input type="radio" id="yes" name="yes" value="Yes">
                         <label for="yes">Yes</label><br>
                         <input type="radio" id="no" name="no" value="No">
