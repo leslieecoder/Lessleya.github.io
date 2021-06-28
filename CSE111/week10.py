@@ -15,7 +15,7 @@ def main():
 def loopForCircles(numberOfCircles):
     area= []
     for _ in range (0, numberOfCircles):
-        r = proptForRadius()
+        r = promtForRadius()
         a = computeCircleArea(r)
         area.append(a)
     return area
