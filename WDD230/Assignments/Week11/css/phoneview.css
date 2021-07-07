@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/*Small View*/
+
+main {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+/*Header Section Style*/
+
+header {
+    justify-content: left;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+.logo {
+    margin: 20px;
+    flex: column;
+}
+
+header section {
+    margin: 10px 0;
+}
+
+.heading {
+    flex: column;
+}
+
+header p {
+    font-family: poppins, sans-serif;
+    font-size: 10px;
+    margin: 0;
+}
+
+.heading h1 {
+    display: inline;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+/*Logo Style*/
+
+.logo {
+    max-width: 25%;
+    display: inline;
+}
+
+
+/*Navigation Style*/
+
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: rgb(0, 195, 255);
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    background-color: #fdc500;
+    color: white;
+    transition: 0.3s;
+}
+
+.responsive li {
+    display: block;
+}
+
+.active,
+.btn:hover {
+    background-color: #fdc500;
+}
+
+
+/*Hero Style*/
+
+.hero-image {
+    margin: 0 auto;
+}
+
+
+/*Body Style*/
+
+body {
+    font-family: poppins, sans-serif;
+    max-width: 425px;
+    margin: 0 auto;
+}
+
+#hero {
+    width: 100%;
+}
+
+
+/*Article Style*/
+
+.article {
+    background-color: rgb(176, 235, 253);
+    text-align: justify;
+    padding: 40px;
+    margin: 25px;
+}
+
+.articleImage {
+    width: 100%;
+}
+
+
+/*Pancakes Style*/
+
+#pancakes {
+    background-color: rgb(17, 207, 74);
+    color: black;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*Footer style*/
+
+li {
+    list-style-type: none;
+}
+
+footer {
+    background-color: rgb(0, 195, 255);
+}
+
+#map {
+    margin-bottom: 15px;
+    text-shadow: black 2px 2px;
+}
+
+footer #map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .social {
+    display: none;
+}
+
+footer .information {
+    list-style: none;
+}
+
+footer h2 .information {
+    text-align: center;
+}
+
+footer .mod {
+    text-align: center;
+}
+
+footer .copyright {
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 10px;
+    color: azure;
+}
+
+
+/*Weather Summary*/
+
+.weatherSummary .text {
+    color: white;
+    background-color: rgba(0, 195, 255, 0.521);
+    max-width: 565px;
+    max-width: 300px;
+    margin: 25px 0px;
+    padding: 30px;
+    font-size: 11px;
+}
+
+
+/*Five Day Forcast*/
+
+.fiveDays {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    padding: 5px;
+}
+
+.fivedayforcast {
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+.fivedayforcast {
+    padding: 5px;
+}
+
+.fivedayforcast p {
+    font-size: 2em;
+    margin: .25em auto;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.contentbox-forecast {
+    margin: 1em auto;
+    background-color: #fdc500;
+    margin: 20px;
+    color: black;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: 100px;
+    padding: 15px;
+}
+
+td img {
+    max-width: 50px;
+    margin: 20px;
+}
+
+.forecastingTable tr {
+    text-align: center;
+}
+
+.pancakes-show {
+    display: block;
+}
+
+.pancakes-hidden {
+    display: none;
+}
+
+
+/*cards style*/
+
+.cards img {
+    max-width: 100%;
+}
+
+.motto {
+    font-family: poppons, "sans-serif"
+}
+
+.data h2 {
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    padding-top: 15px;
+}
+
+.upcoming-event {
+    border: 3px dashed rgb(19, 165, 5);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+
+/**FORM STYLE**/
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="number"],
+#contact input[type="date"],
+#contact textarea,
+#contact button[type="submit"],
+#contact button[type="range"],
+#contact button[type="radio"] {
+    font: 400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 50px 0;
+}
+
+.container h3 {
+    color: #F96;
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.container h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+}
+
+.form-box {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 80%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="number"],
+#contact input[type="date"],
+#contact textarea,
+#contact button[type="submit"],
+#contact button[type="range"],
+#contact button[type="radio"] {
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="date"],
+#contact button[type="range"]:hover,
+#contact button[type="radio"]:hover #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #AAA;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+.button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #0CF;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #09C;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
+}
+
+
+/** Thanks **/
+
+.thanks {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    color: #0CF;
+    border: 3px solid #fdc500;
+    position: relative;
+}
+
+.thanks h2 {
+    color: gray;
+    font-size: 15px;
+}

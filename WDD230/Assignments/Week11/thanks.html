@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -10,15 +11,17 @@
     sequential  module content. The project provides opportunities to apply the concepts presented in the
      weeks by planning, designing, developing, and maintaining a weather related site. This project will
       prepare you with a foundation upon which to complete the term project at the end of the semester.">
-    <title>Storm Center | Week 08</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Blue Sky </title>
+    <link rel="stylesheet" href="css/phoneview.css">
+    <link rel="stylesheet" href="css/mediumview.css">
+    <link rel="stylesheet" href="css/largeview.css">
     <link rel="normalize" href="css/normalize.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div id="pancakes">
-        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion."</p>
+        <p> 🥞Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.🥞</p>
     </div>
     <div>
         <header>
@@ -27,8 +30,8 @@
 
                 <img class="logo" src="img/logo.png" alt="logo">
                 <section class="heading">
-                    <h1>The Weather Site</h1>
-                    <p>The weather site catch phrase/ motto</p>
+                    <h1>The Blue Sky Site</h1>
+                    <p>The most accurate weather</p>
                 </section>
             </div>
         </header>
@@ -38,9 +41,9 @@
                 <li><a class="btn" href="../Week11/index.html">Home</a></li>
                 <li><a class="btn active" href="../Week11/preston-11.html">Preston</a></li>
                 <li><a class="btn" href="../Week11/sodaSprings.html">Soda Springs</a></li>
-                <li><a class="btn" href="../Week11/fishHeaven.html">Fish Haven</a></li>
-                <li><a class="btn active" href="../Week08/stormcenter.html">Storm Center</a></li>
-                <li><a class="btn" href="../Week07/gallery-7.html">Gallery</a></li>
+                <li><a class="btn" href="../Week11/fishHaven.html">Fish Haven</a></li>
+                <li><a class="btn" href="../Week11/stormcenter.html">Storm Center</a></li>
+                <li><a class="btn" href="../Week11/gallery-7.html">Gallery</a></li>
 
             </ul>
         </nav>
@@ -52,35 +55,38 @@
                 <h2>The form has submitted successfully</h2>
             </div>
         </main>
-        <div class="contact-information" style="width:100%; display: flex;">
-            <div class="map">
-                <img src="img/location.png" alt="map-picture" style="width: 50%;">
-            </div>
-
-            <div class="information">
-                <h2>Contact Information</h2>
-                <ul>
-                    <li>📍 427 US-91, Preston, ID 83263</li>
-                    <li>✉️ theweathersite@gmail.com</li>
-                    <li>☎️ 208-497-2091</li>
-                </ul>
-
-                <div class="social">
-                    <img src="img/fb.png" alt="facebook" style="width: 5%;">
-                    <img src="img/insta.png" alt="instagram" style="width: 5%;">
-                    <img src="img/twitter.png" alt="twiter" style="width: 5%;">
-                </div>
-            </div>
 
 
-
-        </div>
         <footer>
-            <p>&copy;The weather Site | Attributions| Lesliee Cruz <span id="currentDate"></span></p>
+            <div class="contact-information">
+
+                <div class="information">
+                    <h2>Contact Information</h2>
+                    <ul>
+                        <li>📍 427 US-91, Preston, ID 83263</li>
+                        <li>✉️ theweathersite@gmail.com</li>
+                        <li>☎️ 208-497-2091</li>
+                    </ul>
+
+                    <div class="social">
+                        <img src="img/fb.png" alt="facebook" style="width: 5%;">
+                        <img src="img/insta.png" alt="instagram" style="width: 5%;">
+                        <img src="img/twitter.png" alt="twiter" style="width: 5%;">
+                    </div>
+                    <div class="map">
+                        <img src="img/location.png" alt="map-picture" id="map">
+                    </div>
+                </div>
+                <div class="copyright">
+                    <span class="copyright">
+        <p>&copy;The Blue Sky | Attributions| Lesliee Cruz <span id="currentDate"></span></p>
+                    </span>
         </footer>
-    </div>
+        </div>
 
 </body>
 <script src="js/menu.js"></script>
+<script src="js/prestonApi.js"></script>
+
 
 </html>
