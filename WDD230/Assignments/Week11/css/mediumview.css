@@ -202,6 +202,9 @@
         grid-row: 2/3;
         padding: 30px;
     }
+    .social {
+        display: inline;
+    }
     /*Friday Message*/
     #fridayMessage {
         background-color: rgb(241, 241, 44);
@@ -320,16 +323,16 @@
         outline: 0;
         border: 1px solid #999;
     }
-    ::-webkit-input-placeholder {
+     ::-webkit-input-placeholder {
         color: #888;
     }
-    :-moz-placeholder {
+     :-moz-placeholder {
         color: #888;
     }
-    ::-moz-placeholder {
+     ::-moz-placeholder {
         color: #888;
     }
-    :-ms-input-placeholder {
+     :-ms-input-placeholder {
         color: #888;
     }
     /** Thanks **/
@@ -344,5 +347,10 @@
     .thanks h2 {
         color: gray;
         font-size: 15px;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
     }
 }
