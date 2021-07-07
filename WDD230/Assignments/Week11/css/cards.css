@@ -204,12 +204,20 @@ section:hover {
     color: rgb(0, 195, 255);
 }
 
+.data h2:hover {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
 .cards {
     display: grid;
     text-align: center;
     grid-template-columns: 1fr;
     grid-gap: 20px;
     padding-top: 15px;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 25px;
 }
 
 

@@ -72,6 +72,7 @@ fetch(requestURL)
         const events = jsonObject.towns[0].events;
 
         let card = document.createElement('section');
+
         let event0 = document.createElement('p');
         let event1 = document.createElement('p');
         let event2 = document.createElement('p');
