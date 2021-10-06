@@ -23,10 +23,10 @@ def read_file(filename):
                 average += p
                 if (maxComm < p):
                     maxComm = p
-                    lineMax =line
+                    lineMax = line
                 if (lowComm < p):
                     lowComm = p
-                    lineMax = total   
+                    lineMin = line
                 # maxComm = max(maxComm,p)
                 # lowComm = min(lowComm,p)
             total += 1
